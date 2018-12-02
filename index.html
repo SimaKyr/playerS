@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<title>PlayerS</title>
+		<style>
+		p, h1,a { font-family: 'Roboto', sans-serif;}
+		body{ height: 20%; padding: 10%; text-align: center; overflow: hidden;}
+p, h1, img {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}	
+a{ text-decoration: none; font-weight: bold; }
+		</style>
+	</head>
+
+<body>
+<img src="favicon.png" height="240" width="260" draggable="false">
+<h1>Bookmarklet PlayerS</h1>
+<a href="">Drag ME</a>
+<p>Drag and drop the link above to your bookmarks bar.</p>
+<p id="helpful">If you don't see the bookmarks bar, press</p>
+<script>
+var key = (navigator.userAgent.toLowerCase().indexOf('mac') != -1 ? 'Cmd' : 'Ctrl');
+var helpful = document.getElementById('helpful');
+helpful.innerText = helpful.innerText + ' ' + key + '+Shift+B.'
+</script>
+</body>
+<html>
