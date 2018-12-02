@@ -16,6 +16,7 @@ p, h1, img {
   user-select: none;
 }	
 a{ text-decoration: none; font-weight: bold; }
+#gif{ position: absolute; bottom: 0px; right: 0px; border-radius: 10px; height: 150px;}
 		</style>
 	</head>
 
@@ -30,5 +31,6 @@ var key = (navigator.userAgent.toLowerCase().indexOf('mac') != -1 ? 'Cmd' : 'Ctr
 var helpful = document.getElementById('helpful');
 helpful.innerText = helpful.innerText + ' ' + key + '+Shift+B.';
 </script>
+<img src="gif.gif" id="gif">
 </body>
 <html>
