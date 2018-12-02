@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-	<link rel="icon" type="image/png" href="favicon.png" />
+	<link rel="icon" type="image/png" href="favicon.png">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<title>PlayerS</title>
@@ -22,13 +22,13 @@ a{ text-decoration: none; font-weight: bold; }
 <body>
 <img src="favicon.png" height="240" width="260" draggable="false">
 <h1>Bookmarklet PlayerS</h1>
-<a href="javascript:x=document.createElement('script');x.src='//is.gd/playeSJS'; document.getElementsByTagName('head')[0].appendChild(x);">Drag ME</a>
+<a id="changeMe" href="javascript:x=document.createElement('script');x.src='//is.gd/playeSJS'; document.getElementsByTagName('head')[0].appendChild(x);">🔰PlayerS</a>
 <p>Drag and drop the link above to your bookmarks bar.</p>
 <p id="helpful">If you don't see the bookmarks bar, press</p>
 <script>
 var key = (navigator.userAgent.toLowerCase().indexOf('mac') != -1 ? 'Cmd' : 'Ctrl');
 var helpful = document.getElementById('helpful');
-helpful.innerText = helpful.innerText + ' ' + key + '+Shift+B.'
+helpful.innerText = helpful.innerText + ' ' + key + '+Shift+B.';
 </script>
 </body>
 <html>
